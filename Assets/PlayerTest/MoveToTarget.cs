@@ -16,15 +16,12 @@ public class MoveToTarget : MonoBehaviour
         //{
         //    transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.position.x, transform.position.y, target.position.z), .01f); //move player towards target, ignors y to avoid stutter
         //}
-
         if (focus == null)
         {
             MoveToPoint(cursor.position);
         }
         else
         {
-           // MoveToPoint(focus.position);
-
             if (GetDistance(new Vector2(focus.position.x, focus.position.z), new Vector2(transform.position.x, transform.position.z)) > 1)
             {
                 //Debug.Log("distance = " + GetDistance(new Vector2(focus.position.x, focus.position.z), new Vector2(transform.position.x, transform.position.z)));
@@ -33,11 +30,11 @@ public class MoveToTarget : MonoBehaviour
             else
             {
                 StopFollowingTarget();
-                
             }
             cursor.position = transform.position;
         }
     }
+
 
     public void MoveToPoint(Vector3 point)
     {

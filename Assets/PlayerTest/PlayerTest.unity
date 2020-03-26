@@ -314,7 +314,6 @@ MonoBehaviour:
   zoomSpeed: 4
   minZoom: 2
   maxZoom: 7
-  pitch: 0
   currentZoom: 3
 --- !u!1 &837035441
 GameObject:
@@ -516,7 +515,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1495088507
 MeshRenderer:
@@ -615,7 +614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 850e0d264865df24684a3a128daca2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.05
   cursor: {fileID: 1763076775}
   focus: {fileID: 0}
 --- !u!114 &1595218615

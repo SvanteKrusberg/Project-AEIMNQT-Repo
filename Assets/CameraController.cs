@@ -11,8 +11,6 @@ public class CameraController : MonoBehaviour
     public float minZoom = 2f;
     public float maxZoom = 10f;
 
-    public float pitch = 2f;
-
     public float currentZoom = 5f;
 
     void Update()
@@ -24,6 +22,6 @@ public class CameraController : MonoBehaviour
     void LateUpdate()
     {
         transform.position = target.position - offset * currentZoom;
-        transform.LookAt(target.position + Vector3.up * pitch) ;
+        transform.LookAt(target.position);
     }
 }
