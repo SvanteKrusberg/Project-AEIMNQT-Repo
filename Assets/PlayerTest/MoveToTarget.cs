@@ -33,8 +33,9 @@ public class MoveToTarget : MonoBehaviour
             else
             {
                 StopFollowingTarget();
-                cursor.position = transform.position;
+                
             }
+            cursor.position = transform.position;
         }
     }
 
